@@ -153,6 +153,7 @@ function removeFlavorByName(A,N){
   console.log(A[27])
   A.splice(x,1);
   console.log(A);
+  return A
 }
 removeFlavorByName(originalFlavors, 'Rocky Road')
 
