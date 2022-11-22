@@ -64,12 +64,12 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 function is31Flavors(P){
   if(P.length===31){
     console.log('T');
-let x = true
+return true
 } else {
     console.log('F');
-let x = false
+return false
 }
-return x
+
 }
 is31Flavors(originalFlavors)
 
