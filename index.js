@@ -128,9 +128,11 @@ Use the getFlavorByIndex function below to do the following:
 
 
 function getFlavorByIndex(A,F){
-  return console.log(A[F]);
- }
- getFlavorByIndex(originalFlavors,0)
+  let x = console.log(A[F]);
+   console.log(x);
+   return x
+  }
+  getFlavorByIndex(originalFlavors,5)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
