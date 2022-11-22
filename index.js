@@ -148,14 +148,12 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(A,N){
-  console.log(A.length);
   let x = A.lastIndexOf(N);
   console.log(x);
   console.log(A[27])
- let y = A.splice(x,1);
+  A.splice(x,1);
   console.log(A);
-  console.log(A.length);
-  return y
+  return A
 }
 removeFlavorByName(originalFlavors, 'Rocky Road')
 
