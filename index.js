@@ -176,11 +176,31 @@ Use the filterByWord function below to do the following:
 */
 
 
-function filterByWord(/*your code here*/){
-  /*your code here*/
+function filterByWord(A,S){
+  A.unshift('fake chocolate');
+  A.unshift('fake chocolate');
+  for(let i = 0; i < A.length; i++) {
+   console.log(i);
+    console.log(A[i])
+    console.log(A[i].includes(S));
+    if(A[i].includes(S)){
+    console.log('chocolate');
+    } else {
+    A.splice(i,1)
+    console.log(A);
+    i = 0
+}   
 }
-
-
+console.log(A);
+A.shift();
+let trash = ['trash']
+let filter = A.concat(trash);
+console.log(filter);
+filter.pop();
+console.log(filter);
+return filter
+}
+filterByWord(originalFlavors,'Chocolate');
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
